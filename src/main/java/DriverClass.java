@@ -68,15 +68,15 @@ public class DriverClass {
 			System.out.println(
 					c.toString() + "Modules in this course:"); 
 			for (Module m : cModules) {
-				System.out.println(m + "\nStudents enrolled in module:"+m.getStudents());
+				System.out.println(m + "\nStudents enrolled in module:\n"+m.getStudents());
 			}
 		}
-		System.out.println("Students information:");
+		System.out.println("\n\nStudents information:");
 		for (Student s: students) {
 			System.out.println(
 					s.toString() + 
-					", Modules registered for:" + s.getModules()+
-					", Courses enrolled in:" + s.getCourses());
+					",\nModules registered for:" + s.getModules()+
+					",\nCourses enrolled in:" + s.getCourses());
 		}
 	}
 
